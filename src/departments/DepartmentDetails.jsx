@@ -1,4 +1,4 @@
-export default function Departments() {
+export default function DepartmentDetails() {
   return (
     <>
       <h1>All Departments</h1>

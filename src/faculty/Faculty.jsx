@@ -1,4 +1,4 @@
-import { API } from "#api/data";
+import { getFaculty } from "#api/faculty";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
@@ -7,17 +7,11 @@ export default function Faculty() {
   const [faculty, setFaculty] = useState([]);
   
   useEffect(()=>{
-    const getFaculty = async() => {
-        try {
-        const response = await fetch(API+"/faculty");
-        const result = await response.json();
-        
-        setFaculty(result);
-      } catch (e) {
-        console.log('SOMETHING WENT WRONG: ', e);
-      }
+    const syncFaculty = async() => {
+        const data = await getFaculty();
+        setFaculty(data);
     }
-    getFaculty();
+    syncFaculty();
   }, [])
 
   return (
