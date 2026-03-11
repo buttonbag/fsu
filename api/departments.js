@@ -11,7 +11,7 @@ export const getDepartments = async () => {
   }
 }
 
-export const getDepartmentsById = async (id) => {
+export const getDepartmentById = async (id) => {
   try {
     const response = await fetch(API + "/departments/" + id);
     const result = await response.json();
@@ -22,7 +22,7 @@ export const getDepartmentsById = async (id) => {
   }
 }
 
-export const getFacultyByDepartmentsId = async (id) => {
+export const getFacultyByDepartmentId = async (id) => {
   try {
     const response = await fetch(API + "/departments/" + id + "/faculty");
     const result = await response.json();

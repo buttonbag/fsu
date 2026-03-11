@@ -4,6 +4,7 @@ import Faculty from "./faculty/Faculty";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import FacultyDetails from "./faculty/FacultyDetails";
+import DepartmentDetails from "./departments/DepartmentDetails";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/faculty" element={<Faculty />}/>
         <Route path="/faculty/:id" element={<FacultyDetails />}/>
         <Route path="/departments" element={<Departments />}/>
+        <Route path="/departments/:id" element={<DepartmentDetails />}/>
       </Routes>
     </>
   )
