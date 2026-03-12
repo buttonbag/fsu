@@ -1,6 +1,7 @@
 import { getFaculty } from "#api/faculty";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Faculty() {

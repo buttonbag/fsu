@@ -5,15 +5,15 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import FacultyDetails from "./faculty/FacultyDetails";
 import DepartmentDetails from "./departments/DepartmentDetails";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css"
 
 
 function App() {
 
   return (
-    <>
+    <main className="container">
       <Navbar />
-
-
       <Routes>
         <Route index path="/" element={<Home />}/>
         <Route path="/faculty" element={<Faculty />}/>
@@ -21,7 +21,7 @@ function App() {
         <Route path="/departments" element={<Departments />}/>
         <Route path="/departments/:id" element={<DepartmentDetails />}/>
       </Routes>
-    </>
+    </main>
   )
 }
 

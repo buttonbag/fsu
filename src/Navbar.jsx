@@ -4,8 +4,8 @@ export default function Navbar() {
 
 
   return (
-    <header>
-      <div>FSU</div>
+    <header className="navbar">
+      <div className="brand">FSU</div>
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/faculty">Faculty</NavLink>
